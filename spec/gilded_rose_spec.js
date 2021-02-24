@@ -194,7 +194,7 @@ describe("GildedRose shop manager", function () {
 
     var expected = [
       { sellIn: 9, quality: 32 },
-      { sellIn: 10, quality: 32 },
+      { sellIn: 10, quality: 31 },
       { sellIn: 11, quality: 31 },
     ];
     expected.forEach(function (testCase, idx) {

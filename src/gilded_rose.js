@@ -21,15 +21,9 @@ class SuperItem extends Item {
     this.quality++;
     if (this.sellIn < 0) this.quality++;
     if (this.name == "Backstage passes to a TAFKAL80ETC concert") {
-      if (this.sellIn < 11) {
-        this.quality = this.quality + 1;
-      }
-      if (this.sellIn < 5) {
-        this.quality = this.quality + 1;
-      }
-      if (this.sellIn < 0) {
-        this.quality = 0;
-      }
+      if (this.sellIn < 10) this.quality = this.quality + 1;
+      if (this.sellIn < 5) this.quality = this.quality + 1;
+      if (this.sellIn < 0) this.quality = 0;
     }
     if (this.quality >= 50) this.quality = 50;
   }
